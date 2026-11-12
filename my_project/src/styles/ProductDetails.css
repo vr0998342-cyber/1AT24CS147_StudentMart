@@ -1,0 +1,30 @@
+/* ProductDetails Styles */
+.product-details-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.product-back-button {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.product-details-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 24px;
+}
+.product-details-content {
+  margin-top: 20px;
+}
+.product-details-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #4f46e5;
+  margin: 15px 0;
+}

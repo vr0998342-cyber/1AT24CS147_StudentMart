@@ -1,0 +1,29 @@
+/* ProductForm Styles */
+.product-form-page {
+  padding: 20px;
+}
+.product-form-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.product-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.product-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+.product-form-message {
+  padding: 10px;
+  background: #fef2f2;
+  color: #dc2626;
+  border-radius: 8px;
+  margin-top: 15px;
+}

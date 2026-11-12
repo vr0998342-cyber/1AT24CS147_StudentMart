@@ -1,0 +1,30 @@
+/* ProductGrid Styles */
+.products-page {
+  padding: 20px;
+}
+.products-heading {
+  margin-bottom: 20px;
+}
+.product-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.products-message {
+  color: #dc2626;
+  margin-bottom: 15px;
+}
+.products-status {
+  padding: 40px;
+  text-align: center;
+  color: #64748b;
+}
+.products-empty {
+  padding: 40px;
+  text-align: center;
+}
