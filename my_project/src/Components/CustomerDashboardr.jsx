@@ -104,6 +104,7 @@ function CustomerDashboard() {
   const [orders, setOrders] = useState([]);
   const [loadingOrders, setLoadingOrders] = useState(false);
   const [pickupLocation, setPickupLocation] = useState("Main Student Center");
+  const [deliveryAddress, setDeliveryAddress] = useState("");
   const [orderNotes, setOrderNotes] = useState("");
   const [orderMessage, setOrderMessage] = useState("");
   const [placingOrder, setPlacingOrder] = useState(false);
@@ -237,6 +238,7 @@ function CustomerDashboard() {
           image: item.image || ""
         })),
         pickupLocation,
+        deliveryAddress,
         notes: orderNotes
       };
 
@@ -666,6 +668,19 @@ function CustomerDashboard() {
                         <option value="Department Office">CS Department Reception</option>
                         <option value="Campus Cafeteria">Student Cafeteria Counter</option>
                       </select>
+                    </div>
+
+                    {/* Delivery Address */}
+                    <div className="form-group-compact">
+                      <label>Delivery Address *</label>
+                      <textarea
+                        placeholder="Enter full delivery address (street, building, room, etc.)"
+                        value={deliveryAddress}
+                        onChange={(e) => setDeliveryAddress(e.target.value)}
+                        rows={3}
+                        required
+                        style={{ width: "100%", resize: "vertical", padding: "8px", borderRadius: "6px", border: "1px solid #d1d5db", fontSize: "14px" }}
+                      />
                     </div>
 
                     <div className="form-group-compact">

@@ -1,29 +1,53 @@
-/* ProductForm Styles */
+/* Product Form - Pastel Green Theme */
 .product-form-page {
-  padding: 20px;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #e6f4ea; /* pastel green */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 .product-form-card {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 30px;
-  max-width: 600px;
-  margin: 0 auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .product-form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 1rem;
 }
 .product-form-actions {
   display: flex;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+.product-form-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.product-form-actions button[type="submit"] {
+  background: #4f46e5; /* keep primary button for action */
+  color: white;
+}
+.product-form-actions button[type="button"] {
+  background: #c8e6c9; /* pastel green cancel */
+  color: #1b5e20;
+}
+.product-form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 .product-form-message {
-  padding: 10px;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
   background: #fef2f2;
   color: #dc2626;
   border-radius: 8px;
-  margin-top: 15px;
 }
